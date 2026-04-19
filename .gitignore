@@ -16,7 +16,7 @@ Oltest_BackUpThisFolder_ButDontShipItWithYourGame/
 .vRRm_BurstDebugInformation_DoNotShip/
 
 *DoNotShip*
-
+.utmp/
 
 # Memory captures
 MemoryCaptures/
