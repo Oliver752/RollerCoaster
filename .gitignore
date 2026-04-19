@@ -13,7 +13,10 @@ UserSettings/
 Oltest_BackUpThisFolder_ButDontShipItWithYourGame/
 
 # Burst / IL2CPP debug
-.vRRM_BurstDebugInformation_DoNotShip/
+.vRRm_BurstDebugInformation_DoNotShip/
+
+*DoNotShip*
+
 
 # Memory captures
 MemoryCaptures/
