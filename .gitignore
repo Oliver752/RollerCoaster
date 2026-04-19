@@ -1,0 +1,64 @@
+# =========================
+# UNITY
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# builds
+Oltest_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# Burst / IL2CPP debug
+.vRRM_BurstDebugInformation_DoNotShip/
+
+# Memory captures
+MemoryCaptures/
+
+# =========================
+# IDE
+# =========================
+.vs/
+.vscode/
+.idea/
+
+# Visual Studio generált
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# =========================
+# BUILDS
+# =========================
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.symbols.zip
+
+# =========================
+# UNITY ADDRESSABLES
+# =========================
+ServerData/
+StreamingAssets/aa*
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
