@@ -1,4 +1,5 @@
 ﻿<Solution>
+<<<<<<< HEAD
   <Project Path="Unity.Timeline.csproj" />
   <Project Path="Unity.PlasticSCM.Editor.csproj" />
   <Project Path="Unity.Mathematics.csproj" />
@@ -60,4 +61,9 @@
   <Project Path="UnityEditor.SpatialTracking.csproj" />
   <Project Path="Unity.Collections.Editor.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj" />
+=======
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+>>>>>>> feature/basic_stuff
 </Solution>
