@@ -228805,6 +228805,7 @@ GameObject:
   - component: {fileID: 9001235046460891104}
   - component: {fileID: 8524252296550966622}
   - component: {fileID: 7155606757992184846}
+  - component: {fileID: 9001235046460891105}
   m_Layer: 2
   m_Name: VRPlayer
   m_TagString: Untagged
@@ -232987,6 +232988,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &9001235046460891105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3549139402449993794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5337965cffa65804cab16e71dbc90457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRPlayer
 --- !u!4 &9018495451615676101
 Transform:
   m_ObjectHideFlags: 0
