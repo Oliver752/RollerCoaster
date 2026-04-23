@@ -193714,6 +193714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TunnelingVignette
       objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581377, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -224728,7 +224732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &225417746354598305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225409,7 +225413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &533977280908783987
 Transform:
   m_ObjectHideFlags: 0
@@ -225441,7 +225445,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 2147483648
   m_Handedness: 2
-  m_AttachTransform: {fileID: 2631217443608720788}
+  m_AttachTransform: {fileID: 2780539465428941214}
   m_KeepSelectedTargetValid: 0
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -225590,8 +225594,8 @@ MonoBehaviour:
   m_EnableUIInteraction: 0
   m_BlockInteractionsWithScreenSpaceUI: 0
   m_BlockUIOnInteractableSelection: 1
-  m_ManipulateAttachTransform: 1
-  m_UseForceGrab: 0
+  m_ManipulateAttachTransform: 0
+  m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 0
   m_RotateReferenceFrame: {fileID: 0}
@@ -226090,7 +226094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1240045945837123528
 Transform:
   m_ObjectHideFlags: 0
@@ -227122,7 +227126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mediator: {fileID: 8840692100581056564}
   m_TransformationPriority: 0
-  m_MoveSpeed: 2.5
+  m_MoveSpeed: 5
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -227351,7 +227355,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 2147483648
   m_Handedness: 1
-  m_AttachTransform: {fileID: 7749722537540014745}
+  m_AttachTransform: {fileID: 2780539464061647231}
   m_KeepSelectedTargetValid: 0
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -227500,8 +227504,8 @@ MonoBehaviour:
   m_EnableUIInteraction: 0
   m_BlockInteractionsWithScreenSpaceUI: 0
   m_BlockUIOnInteractableSelection: 1
-  m_ManipulateAttachTransform: 1
-  m_UseForceGrab: 0
+  m_ManipulateAttachTransform: 0
+  m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 0
   m_RotateReferenceFrame: {fileID: 0}
@@ -227962,7 +227966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2780539465428941214
 Transform:
   m_ObjectHideFlags: 0
@@ -229101,7 +229105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &3948985609289433539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229284,7 +229288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4225368272825989486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229944,7 +229948,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3670731552180071951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f365cf844c03449bc8973eead2c3c1, type: 3}
   m_Name: 
@@ -231628,9 +231632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RayInteractor: {fileID: 0}
   m_NearFarInteractor: {fileID: 6747632207474012347}
-  m_TeleportInteractor: {fileID: 2780539465112687975}
-  m_TeleportMode: {fileID: 1263111715868034790, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_TeleportModeCancel: {fileID: 737890489006591557, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_TeleportInteractor: {fileID: 0}
+  m_TeleportMode: {fileID: 0}
+  m_TeleportModeCancel: {fileID: 0}
   m_Turn: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SnapTurn: {fileID: -7374733323251553461, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_Move: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
@@ -231716,15 +231720,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RayInteractor: {fileID: 0}
   m_NearFarInteractor: {fileID: 4374374059256458788}
-  m_TeleportInteractor: {fileID: 533977280908783998}
-  m_TeleportMode: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_TeleportModeCancel: {fileID: 2307464322626738743, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_TeleportInteractor: {fileID: 0}
+  m_TeleportMode: {fileID: 0}
+  m_TeleportModeCancel: {fileID: 0}
   m_Turn: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SnapTurn: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_Move: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_UIScroll: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SmoothMotionEnabled: 0
-  m_SmoothTurnEnabled: 0
+  m_SmoothTurnEnabled: 1
   m_NearFarEnableTeleportDuringNearInteraction: 1
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
@@ -233012,7 +233016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mediator: {fileID: 8840692100581056564}
   m_TransformationPriority: 0
-  m_TurnSpeed: 60
+  m_TurnSpeed: 90
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
   m_LeftHandTurnInput:
