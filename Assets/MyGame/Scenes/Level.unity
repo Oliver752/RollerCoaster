@@ -77476,13 +77476,32 @@ MonoBehaviour:
   m_PlayOnAwake: 0
   m_LoopMode: 1
   m_Method: 1
-  m_Duration: 43.67465
-  m_MaxSpeed: 20
-  m_EasingMode: 3
-  m_AlignmentMode: 2
+  m_Duration: 62.392357
+  m_MaxSpeed: 7
+  m_EasingMode: 0
+  m_AlignmentMode: 1
   m_ObjectForwardAxis: 2
   m_ObjectUpAxis: 1
   m_StartOffset: 0
+--- !u!114 &769783318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769783312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a07e350f5d820438d2bb0b48699c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CabinCameraAlign
+  trainTransform: {fileID: 769783313}
+  vrPlayer: {fileID: 3549139402449993793}
+  autoFindReferences: 1
+  followTrainMotionDirection: 1
+  followSplineDirection: 1
+  followPitchAndRoll: 0
+  rotationSmooth: 12
 --- !u!1001 &770042318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219894,31 +219913,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.105883956
+      value: 23.452341
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 16.409222
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.5884538
+      value: -43.29792
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9692996
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.19116464
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.14778139
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.04555373
       objectReference: {fileID: 0}
     - target: {fileID: 4400487253663529807, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -219942,6 +219961,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3916578595028328949, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 769783314}
+    - targetCorrespondingSourceObject: {fileID: 3916578595028328949, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 769783318}
   m_SourcePrefab: {fileID: 100100000, guid: 9ffa94cdb3e9eac408f3ee62a436194d, type: 3}
 --- !u!1001 &2063248048
 PrefabInstance:
@@ -231611,7 +231633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3549139402449993794}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.044989157, y: 0.015993841, z: 0.0007203712, w: 0.9988592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0005455932, y: 1.6633129, z: 0.03806284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
