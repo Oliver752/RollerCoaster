@@ -9,6 +9,7 @@ public class VRGun : MonoBehaviour
     public GameObject bulletPrefab;
     public ParticleSystem gunFireParticleSystem;
     public AudioSource gunFireAudioSource;
+    public Collider[] gunColliders;
 
     public float fireSpeed = 125.0f;
     
@@ -45,6 +46,14 @@ public class VRGun : MonoBehaviour
         // Get the spawnedBullet's Rigidbody component and set its velocity
         // to the forward direction of the bullet multiplied by the fireSpeed.
         spawnedBullet.GetComponent<Rigidbody>().linearVelocity = spawnedBullet.transform.forward * fireSpeed;
+
+        SphereCollider spawnedBulletCollider = spawnedBullet.GetComponent<SphereCollider>();
+        for(int i = 0; i < gunColliders.Length; i++)
+        {
+            Physics.IgnoreCollision(spawnedBulletCollider, gunColliders[i], true);
+        }
+
+        Destroy(spawnedBullet, 5.0f);
     }
 
     public void OnGrab()

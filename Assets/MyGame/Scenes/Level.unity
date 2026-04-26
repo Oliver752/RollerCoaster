@@ -65682,6 +65682,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6971635467984434844, guid: 61d314c054ed3904ba9670cb2be54913, type: 3}
   gunFireParticleSystem: {fileID: 681922278}
   gunFireAudioSource: {fileID: 1636970678}
+  gunColliders:
+  - {fileID: 1095279981}
   fireSpeed: 125
 --- !u!114 &654074787
 MonoBehaviour:
@@ -65700,7 +65702,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -119039,13 +119041,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c23ceeb80a6fd24cac5fe8ba48c85b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095279981}
   m_SourcePrefab: {fileID: 100100000, guid: 3c23ceeb80a6fd24cac5fe8ba48c85b3, type: 3}
 --- !u!4 &1095279979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c23ceeb80a6fd24cac5fe8ba48c85b3, type: 3}
   m_PrefabInstance: {fileID: 1095279978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1095279980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c23ceeb80a6fd24cac5fe8ba48c85b3, type: 3}
+  m_PrefabInstance: {fileID: 1095279978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1095279981
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095279980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7521374624813757580, guid: 3c23ceeb80a6fd24cac5fe8ba48c85b3, type: 3}
 --- !u!1001 &1095506497
 PrefabInstance:
   m_ObjectHideFlags: 0
