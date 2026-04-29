@@ -12,6 +12,10 @@ public class VRGun : MonoBehaviour
     public Collider[] gunColliders;
 
     public float fireSpeed = 125.0f;
+
+    private Vector3 gunVelocity;
+    private Vector3 previousPosition;
+    private bool fireFlag = false;
     
     // Start is called before the first frame update
     void Start()
@@ -22,11 +26,35 @@ public class VRGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         
+        // Velocity is distance between current position and previous position divided by time.
+        gunVelocity = (bulletSpawnTransform.position - previousPosition) / Time.deltaTime;
+ 
+        // Store the position at the end of the Update() function for the next frame.
+        previousPosition = bulletSpawnTransform.position;
+    }
+
+    // FixedUpdate is called every fixed frame-rate frame
+    void FixedUpdate()
+    {
+        // If the fireFlag boolean was set to true during Update()
+        // call the Fire() function and set the fireFlag back to false.
+        if(fireFlag == true)
+        {
+            fireFlag = false;
+            Fire();
+        }
+    }
+
+    // Called by Gun.XRGrabInteractable.InteractableEvents.Activated, when the gun is fired.
+    public void FireBullet()
+    {
+        // Set the boolean fireFlag variable to true so that in the next
+        // FixedUpdate loop iteration the Fire() function can be called. 
+        fireFlag = true;
     }
 
     // Called by VRGun.XRGrabInteractable.InteractableEvents.Activated, when the gun is fired.
-    public void FireBullet()
+    public void Fire()
     {
         Debug.Log("Gun is Fired!!!");
 
@@ -45,7 +73,7 @@ public class VRGun : MonoBehaviour
 
         // Get the spawnedBullet's Rigidbody component and set its velocity
         // to the forward direction of the bullet multiplied by the fireSpeed.
-        spawnedBullet.GetComponent<Rigidbody>().linearVelocity = spawnedBullet.transform.forward * fireSpeed;
+        spawnedBullet.GetComponent<Rigidbody>().linearVelocity = gunVelocity + (spawnedBullet.transform.forward * fireSpeed);
 
         SphereCollider spawnedBulletCollider = spawnedBullet.GetComponent<SphereCollider>();
         for(int i = 0; i < gunColliders.Length; i++)
