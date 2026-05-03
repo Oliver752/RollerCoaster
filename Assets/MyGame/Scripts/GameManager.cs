@@ -30,4 +30,11 @@ public class GameManager : MonoBehaviour
         // Deactivate the tutorial canvas when the player starts the ride.
         tutorialCanvas.SetActive(false);
     }
+
+    public void StopRollerCoasterRide()
+    {
+        Debug.Log("The Ride is Stopping!!!");
+
+        rollerCoasterTrain.GetComponent<SplineAnimate>().Pause();
+    }
 }
