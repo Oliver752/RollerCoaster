@@ -5,14 +5,16 @@ using UnityEngine.Events;
  
 public class Target : MonoBehaviour
 {
+    public int targetPointsValue = 100;
     public ParticleSystem targetParticleSystem;
     public AudioSource targetAudioSource;
     public UnityEvent onTargetHitEvent;
+    private GameManager gameManager;
  
     // Start is called before the first frame update
     void Start()
     {
- 
+        gameManager = FindObjectOfType<GameManager>();
     }
  
     // Update is called once per frame
@@ -34,6 +36,11 @@ public class Target : MonoBehaviour
         GetComponent<MeshCollider>().enabled = false;
         // Disable the target's MeshRenderer to turn it invisible
         GetComponent<MeshRenderer>().enabled = false;
+
+        if (gameManager != null)
+        {
+            gameManager.IncreasePlayerScore(targetPointsValue);
+        }
      
         if (onTargetHitEvent != null)
         {
