@@ -18,13 +18,26 @@ public class GameManager : MonoBehaviour
         Debug.Log("The Game is Starting!!!");
 
         gameOverCanvas.gameObject.SetActive(false);
+
+        player.playerScore = 0;
+        playerScoreCanvas.playerScoreValueText.text = "0";
     }
  
     // Update is called once per frame
     void Update()
     {
         Debug.Log("The Game is Running!!!");
-    }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            GameOver();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            IncreasePlayerScore(100);
+        }
+        }
  
     public void StartRollerCoasterRide()
     {
@@ -47,6 +60,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("Game Over!!!");
+
+        gameOverCanvas.playerScoreValueText.text = "" + player.playerScore;
 
         gameOverCanvas.gameObject.SetActive(true);
     }
